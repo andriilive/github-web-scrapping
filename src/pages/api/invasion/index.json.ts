@@ -1,6 +1,6 @@
-export async function get( {params, request} : {params: {id: string}, request: Request} ) {
+export async function get() {
 
-    console.log({params, request});
+    // console.log({params, request});
 
     return {
         body: JSON.stringify({

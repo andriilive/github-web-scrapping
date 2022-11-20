@@ -1,10 +1,13 @@
-import type { APIRoute } from 'astro';
+import type {EndpointOutput} from 'astro'
+import {getShowcase} from "data";
 
-export const get: APIRoute = ({ params}) => {
-    const id = {params};
-    return {
-        body: JSON.stringify({
-            test: 1
-        })
-    }
-};
+export async function get(): Promise<EndpointOutput> {
+    const showcase = await getShowcase()
+
+    const result = showcase.map((site: { title: string; url: { href: any, any?: any } }) => ({
+        title: site.title,
+        url: site.url.href
+    }))
+
+    return {body: JSON.stringify(result)}
+}

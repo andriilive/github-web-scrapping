@@ -22,6 +22,7 @@
         "paths": {
             "@api/*": ["src/pages/api/*"],
             "@types/*": ["types/*"],
+            "@data/*": ["types/*"]
         },
 
         "module": "ES2022",
@@ -35,5 +36,13 @@
         "./crawl/**/*",
         "./**/*.mjs",
         "./**/*.mts"
+    ],
+    "exclude": [
+        "./node_modules",
+        "./dist",
+        "./.astro",
+        "./storage",
+        "./.git",
+        "./.idea"
     ]
 }
