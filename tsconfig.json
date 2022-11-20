@@ -20,10 +20,8 @@
 
         "baseUrl": ".",
         "paths": {
-            "@crawl/*": ["crawl/*"],
             "@api/*": ["src/pages/api/*"],
-            "@docs/*": ["src/pages/docs*"],
-            "@public/*": ["src/public/*"],
+            "@types/*": ["types/*"],
         },
 
         "module": "ES2022",
@@ -34,6 +32,8 @@
     },
     "include": [
         "./src/**/*",
-        "./crawl/**/*"
+        "./crawl/**/*",
+        "./**/*.mjs",
+        "./**/*.mts"
     ]
 }

@@ -1169,7 +1169,7 @@ packages:
       yargs-parser: 21.1.1
       zod: 3.19.1
     transitivePeerDependencies:
-      - '@types/node'
+      - 'types/node'
       - less
       - sass
       - stylus

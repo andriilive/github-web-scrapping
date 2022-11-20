@@ -7,11 +7,11 @@
     "node": ">=16.0.0"
   },
   "type": "module",
-  "main": "index.js",
+  "main": "scrap.js",
   "scripts": {
     "start": "pnpm run start:dev",
     "start:prod": "node dist/main.js",
-    "start:dev": "ts-node-esm -T src/main.ts",
+    "start:dev": "ts-node-esm -T scrap.mts",
     "build": "tsc",
     "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1",
     "astro:dev": "astro dev",
